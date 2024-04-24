@@ -1,0 +1,118 @@
+/* Estilos base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #111771;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #f5821f;
+}
+
+.contacto {
+    background-color: #f5821f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contacto a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacto:hover {
+    background-color: #f5821f;
+}
+
+main {
+    padding-top: 80px; /* Ajusta el espacio para el header */
+    padding-bottom: 60px; /* Ajusta el espacio para el footer */
+}
+
+.nosotros h2 {
+    color: #f5821f;
+}
+
+.footer {
+    background-color: #f5821f;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-links {
+    margin-bottom: 10px;
+}
+
+.footer .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    nav ul li a {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main > section:last-child {
+        margin-bottom: 60px; /* Ajusta el margen inferior para evitar que el footer tape el contenido en pantallas pequeñas */
+    }
+}

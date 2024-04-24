@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../imagenes/fon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000; /* Texto negro */
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos internos se envuelvan en múltiples líneas */
+}
+
+.seccion-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.seccion {
+    width: calc(33.33% 20px); /* Ancho para tres elementos en una fila con un margen de 20px entre ellos */
+    margin-bottom: 20px; /* Espacio entre filas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.platillo {
+    width: calc(33.33% - 20px); /* Ancho para tres elementos en una fila con un margen de 20px entre ellos */
+    margin-bottom: 20px; /* Espacio entre elementos */
+    box-sizing: border-box; /* Incluye el padding y el border en el cálculo del ancho */
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.platillo img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.platillo h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #000; /* Texto negro */
+}
+
+
+/* Estilo para el título del menú */
+h2 {
+    text-align: center;
+    color: #f5821f; /* Texto negro */
+    font-size: 3em; /* Tamaño del título */
+    margin-bottom: 20px; /* Separación inferior */
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px; /* Ajusta el tamaño de los iconos */
+    height: 30px;
+}
+
+/* Estilos para el menú de navegación */
+header {
+    background-color: #fff; /* Color blanco para la barra */
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido del menú a la derecha */
+    text-align: right; /* Alinea el texto del menú a la derecha */
+    width: 80%; /* Ajusta el ancho del contenedor del menú */
+    margin: 0 auto; /* Centra el contenedor del menú horizontalmente */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; /* Evita que los elementos del menú se envuelvan a la siguiente línea */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; /* Espacio entre elementos del menú */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento del menú */
+}
+
+nav ul li a {
+    color: #111771; /* Color negro para el texto del menú */
+    text-decoration: none;
+    display: inline-block; /* Convertir el enlace en un bloque en línea */
+    padding: 10px; /* Ajustar el relleno según sea necesario */
+    position: relative; /* Establecer posición relativa para agregar la línea inferior */
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #f5821f; /* Línea naranja debajo del enlace al pasar el cursor */
+}
+
+.contacto {
+    background-color: #f5821f; /* Color naranja para el cuadro */
+    padding: 5px 10px; /* Ajusta el padding según sea necesario */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.contacto a {
+    color: #fff; /* Color blanco para el texto */
+    text-decoration: none;
+}
+
+.contacto:hover { /* Estilo aplicado cuando se pasa el cursor sobre el enlace */
+    background-color: #f5821f; /* Color naranja para el cuadro */
+}
+
+main {
+    padding-top: 100px; /* Ajusta el valor según la altura de tu barra de navegación */
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px; /* Ajusta este valor según la altura de tu pie de página */
+}
+
+footer {
+    background-color: #f5821f; /* Color naranja para el pie de página */
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 80%; /* Ajusta el pie de página al ancho completo */
+    text-align: center;
+    color: #fff; /* Color blanco para el texto del pie de página */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer {
+    background-color: #f5821f;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-links {
+    margin-bottom: 10px;
+}
+
+.footer .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    nav ul li a {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main > section:last-child {
+        margin-bottom: 60px; /* Ajusta el margen inferior para evitar que el footer tape el contenido en pantallas pequeñas */
+    }
+}
